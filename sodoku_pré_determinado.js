@@ -23,6 +23,10 @@ do{
     //VERIFICAÇÃO ARMAZENAMENTO NA ARRAY
     //console.log(jogada)
 
+    //VERIFICAÇÃO SE A STRING É UM NÚMERO
+    while(jogada[4] != '1' && jogada[4] != '2' && jogada[4] != '3' && jogada[4] != '4' ||jogada[0] != '0' && jogada[0] != '1' && jogada[0] != '2' && jogada[0] != '3' || jogada[2] != '0' && jogada[2] != '1' && jogada[2] != '2' && jogada[2] != '3' )
+    jogada = prompt("Insira a linha - de 0 à 3 -, a coluna - de 0 à 3 - e o número - de 1 à 4 -, respectivamente, separados por um espaço:\n\n "+ board.join('\n') + "\n\n");
+    
     //PEGAR OS NÚMEROS DA LINHA, COLUNA E O NÚMERO
     var linha = Number(jogada[0]);
     var coluna = Number(jogada[2]);
